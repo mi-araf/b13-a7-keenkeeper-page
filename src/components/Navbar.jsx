@@ -18,7 +18,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className='shadow-xl'>
+        <div className='shadow-md sticky top-0 z-50 bg-white'>
             <div className="navbar bg-base-100 w-11/12 mx-auto ">
                 <div className="navbar-start">
                     <Link href="/" className="btn btn-ghost">

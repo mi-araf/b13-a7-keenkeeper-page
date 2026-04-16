@@ -8,6 +8,7 @@ import { FiArchive } from "react-icons/fi";
 import Call from '../../../../public/assets/call.png';
 import Text from '../../../../public/assets/text.png';
 import Video from '../../../../public/assets/video.png';
+import Link from 'next/link';
 
 
 const formatDate = (dateString) => {
@@ -31,7 +32,7 @@ const FriendDetailPage = async ({ params }) => {
 
     return (
         <div className='bg-[#F8FAFC] '>
-            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 w-10/12 mx-auto py-18'>
+            <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 w-10/12 md:w-9/12 mx-auto py-18'>
 
                 {/* left content */}
                 <div className='col-span-1 md:col-span-2 lg:col-span-2 space-y-4'>
@@ -112,18 +113,18 @@ const FriendDetailPage = async ({ params }) => {
                     <div className='card bg-white shadow-lg rounded-lg p-6'>
                         <p className='text-[#244D3F] text-base font-medium md:text-xl'>Quick Check-In</p>
                         <div className='mt-4 grid grid-cols-3 gap-4'>
-                            <div className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9]'>
+                            <Link href={'#'} className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9]'>
                                 <Image src={Call} width={32} height={32} alt="call.png" className='mx-auto' />
                                 <p className='text-[#1F2937] text-sm md:text-lg'>Call</p>
-                            </div>
-                            <div className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9]'>
+                            </Link>
+                            <Link href={'#'} className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9]'>
                                 <Image src={Text} width={32} height={32} alt="text.png" className='mx-auto' />
-                                <p className='text-[#1F2937] text-sm md:text-lg'>Call</p>
-                            </div>
-                            <div className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9]'>
+                                <p className='text-[#1F2937] text-sm md:text-lg'>Text</p>
+                            </Link>
+                            <Link href={'#'} className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9]'>
                                 <Image src={Video} width={32} height={32} alt="video.png" className='mx-auto' />
-                                <p className='text-[#1F2937] text-sm md:text-lg'>Call</p>
-                            </div>
+                                <p className='text-[#1F2937] text-sm md:text-lg'>Video</p>
+                            </Link>
                         </div>
                     </div>
                 </div>
