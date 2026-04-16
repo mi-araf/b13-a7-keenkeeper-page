@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# KeenKeeper
 
-## Getting Started
+KeenKeeper is a friendship and relationship tracking web app built to help users stay in touch with the people who matter most. It offers a clean, modern interface for browsing friends, viewing relationship goals, logging interactions, exploring timelines, and visualizing engagement stats.
 
-First, run the development server:
+### Live Website + Repository
+[Visit KeenKeeper](https://keenkeeper-mi-araf.vercel.app/) &nbsp; ||&nbsp; [GitHub Repository](https://github.com/mi-araf/b13-a7-keenkeeper-page)
+
+## Project Overview
+A responsive friendship tracking web app to manage connections, search interaction timelines, and visualize relationship activity.
+
+## Technologies Used
+
+- **Next.js**
+- **React.js**
+- **Tailwind CSS**
+- **DaisyUI**
+- **React Icons**
+- **React Toastify**
+- **Recharts**
+
+## Key Features
+
+### 1. Friend Directory with Detail Pages
+Users can browse a collection of friend cards and open dynamic friend detail pages to view profile information such as contact status, tags, email, bio, relationship goal, and next due date.
+
+### 2. Timeline with Filter + Search
+The Timeline page allows users to:
+- filter interactions by type such as **Call**, **Text**, and **Video**
+- search timeline entries by **friend name** or **interaction type**
+- quickly find specific communication history in a clean and simple UI
+
+### 3. Friendship Analytics Dashboard
+A dedicated Stats page visualizes interaction activity using charts, making it easier to understand communication patterns at a glance.
+
+### 4. Clean and Responsive UI
+The project is fully responsive and designed with a minimal, aesthetic interface using DaisyUI and Tailwind CSS for a smooth experience across desktop and mobile devices.
+
+## Pages Included
+
+- **Home Page**
+- **Friend Details Page**
+- **Timeline Page**
+- **Stats Page**
+- **Custom Not Found Page**
+
+
+## Future Improvements
+
+* Add persistent database support
+* Enable real interaction logging and storage
+* Add authentication for personal accounts
+* Improve analytics with more charts and insights
+
+## Author
+
+Developed by **Araf**
+
+If you like this project, feel free to star the repository.
+
+---
+
+### Preview
+##### Home Page
+![Home Page](./public/webSS/home-board.png)
+
+##### Friend Detail Page
+![Friend Detail Page](./public/webSS/friend-details.png)
+
+##### Timeline Page
+![Timeline Page](./public/webSS/timeline.png)
+
+##### Stats Page
+![Stats Page](./public/webSS/stats.png)
+
+
+## Local Setup
+
+Clone the project and run it locally:
 
 ```bash
+git clone https://github.com/mi-araf/b13-a7-keenkeeper-page.git
+cd b13-a7-keenkeeper-page
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+````
+
+Then open:
+
+```bash
+http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
