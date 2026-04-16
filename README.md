@@ -3,7 +3,7 @@
 KeenKeeper is a friendship and relationship tracking web app built to help users stay in touch with the people who matter most. It offers a clean, modern interface for browsing friends, viewing relationship goals, logging interactions, exploring timelines, and visualizing engagement stats.
 
 ### Live Website + Repository
-[Visit KeenKeeper](https://keenkeeper-mi-araf.vercel.app/) &nbsp; ||&nbsp; [GitHub Repository](https://github.com/mi-araf/b13-a7-keenkeeper-page)
+[Visit KeenKeeper](https://keenkeeper-mi-araf.vercel.app/) &nbsp; +&nbsp; [GitHub Repository](https://github.com/mi-araf/b13-a7-keenkeeper-page)
 
 ## Project Overview
 A responsive friendship tracking web app to manage connections, search interaction timelines, and visualize relationship activity.
@@ -43,13 +43,6 @@ The project is fully responsive and designed with a minimal, aesthetic interface
 - **Stats Page**
 - **Custom Not Found Page**
 
-
-## Future Improvements
-
-* Add persistent database support
-* Enable real interaction logging and storage
-* Add authentication for personal accounts
-* Improve analytics with more charts and insights
 
 ## Author
 
