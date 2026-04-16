@@ -9,25 +9,25 @@ const Banner = () => {
             <button className="btn bg-[#244D3F] text-white text-semibold text-base mt-3"><FaPlus className='mt-0.5' /> Add a Friend</button>
 
             <div className='flex flex-wrap justify-center items-center gap-7 my-10'>
-                <div className='card shadow-md w-65 rounded-lg p-6 bg-white'>
+                <div className='card shadow-md w-65 rounded-lg p-6 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#244D3F]/10'>
                     <div className="card-body">
                         <p className='font-semibold text-3xl text-[#244D3F]'>10</p>
                         <p className='text-[#64748B] text-lg'>Total Friends</p>
                     </div>
                 </div>
-                <div className='card shadow-md w-65 rounded-lg p-6 bg-white'>
+                <div className='card shadow-md w-65 rounded-lg p-6 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#244D3F]/10'>
                     <div className="card-body">
                         <p className='font-semibold text-3xl text-[#244D3F]'>3</p>
                         <p className='text-[#64748B] text-lg'>On Track</p>
                     </div>
                 </div>
-                <div className='card shadow-md w-65 rounded-lg p-6 bg-white'>
+                <div className='card shadow-md w-65 rounded-lg p-6 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#244D3F]/10'>
                     <div className="card-body">
                         <p className='font-semibold text-3xl text-[#244D3F]'>6</p>
                         <p className='text-[#64748B] text-lg'>Need Attention</p>
                     </div>
                 </div>
-                <div className='card shadow-md w-65 rounded-lg py-6 bg-white'>
+                <div className='card shadow-md w-65 rounded-lg py-6 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-[#244D3F]/10'>
                     <div className="card-body">
                         <p className='font-semibold text-3xl text-[#244D3F]'>12</p>
                         <p className='text-[#64748B] text-lg'>Interactions This Month</p>
