@@ -1,0 +1,160 @@
+[
+    {
+        "id": 1,
+        "name": "Maya Patel",
+        "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+        "email": "maya.patel@example.com",
+        "days_since_contact": 19,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "close friend",
+            "hiking"
+        ],
+        "bio": "Met during freshman orientation. She now teaches middle school science and still plans the best weekend trail trips.",
+        "goal": 14,
+        "next_due_date": "2026-04-10"
+    },
+    {
+        "id": 2,
+        "name": "Ethan Brooks",
+        "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+        "email": "ethan.brooks@example.com",
+        "days_since_contact": 6,
+        "status": "on-track",
+        "tags": [
+            "former coworker",
+            "basketball",
+            "startup"
+        ],
+        "bio": "Worked together at a small design agency. He recently joined an early-stage startup and still sends voice notes after pickup games.",
+        "goal": 21,
+        "next_due_date": "2026-04-30"
+    },
+    {
+        "id": 3,
+        "name": "Sofia Martinez",
+        "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+        "email": "sofia.martinez@example.com",
+        "days_since_contact": 12,
+        "status": "almost_due",
+        "tags": [
+            "travel buddy",
+            "photography"
+        ],
+        "bio": "We met on a train through Portugal and stayed friends. She freelances as a photographer and is always chasing golden-hour light.",
+        "goal": 14,
+        "next_due_date": "2026-04-17"
+    },
+    {
+        "id": 4,
+        "name": "Noah Kim",
+        "picture": "https://randomuser.me/api/portraits/men/76.jpg",
+        "email": "noah.kim@example.com",
+        "days_since_contact": 28,
+        "status": "overdue",
+        "tags": [
+            "roommate",
+            "gaming",
+            "movie nights"
+        ],
+        "bio": "Shared an apartment for two years. He works in IT support now and still hosts elaborate movie marathons with themed snacks.",
+        "goal": 21,
+        "next_due_date": "2026-04-08"
+    },
+    {
+        "id": 5,
+        "name": "Lena Fischer",
+        "picture": "https://randomuser.me/api/portraits/women/21.jpg",
+        "email": "lena.fischer@example.com",
+        "days_since_contact": 9,
+        "status": "on-track",
+        "tags": [
+            "language exchange",
+            "coffee",
+            "Berlin"
+        ],
+        "bio": "Started as a language-exchange partner and turned into a real friend. She loves tiny cafes, stationery shops, and long voice messages.",
+        "goal": 18,
+        "next_due_date": "2026-04-24"
+    },
+    {
+        "id": 6,
+        "name": "Jordan Reed",
+        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
+        "email": "jordan.reed@example.com",
+        "days_since_contact": 13,
+        "status": "almost_due",
+        "tags": [
+            "neighbor",
+            "dog park",
+            "weekend brunch"
+        ],
+        "bio": "Became friends after our dogs kept choosing the same patch of grass. He is a civil engineer and knows every decent brunch spot in town.",
+        "goal": 15,
+        "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 7,
+        "name": "Priya Nair",
+        "picture": "https://randomuser.me/api/portraits/women/63.jpg",
+        "email": "priya.nair@example.com",
+        "days_since_contact": 31,
+        "status": "overdue",
+        "tags": [
+            "grad school",
+            "book club",
+            "thoughtful"
+        ],
+        "bio": "We survived graduate statistics together. She runs a neighborhood book club and always has a sharp recommendation for what to read next.",
+        "goal": 30,
+        "next_due_date": "2026-04-14"
+    },
+    {
+        "id": 8,
+        "name": "Caleb Turner",
+        "picture": "https://randomuser.me/api/portraits/men/54.jpg",
+        "email": "caleb.turner@example.com",
+        "days_since_contact": 4,
+        "status": "on-track",
+        "tags": [
+            "tennis",
+            "high school",
+            "road trips"
+        ],
+        "bio": "Known each other since sophomore year of high school. He coaches youth tennis now and still suggests last-minute road trips with suspicious confidence.",
+        "goal": 10,
+        "next_due_date": "2026-04-21"
+    },
+    {
+        "id": 9,
+        "name": "Amelia Grant",
+        "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+        "email": "amelia.grant@example.com",
+        "days_since_contact": 20,
+        "status": "almost_due",
+        "tags": [
+            "volunteer",
+            "community garden"
+        ],
+        "bio": "Met while volunteering at a Saturday food pantry. She helps run a community garden and sends photos whenever her tomatoes start showing off.",
+        "goal": 21,
+        "next_due_date": "2026-04-16"
+    },
+    {
+        "id": 10,
+        "name": "Daniel Okafor",
+        "picture": "https://randomuser.me/api/portraits/men/41.jpg",
+        "email": "daniel.okafor@example.com",
+        "days_since_contact": 7,
+        "status": "on-track",
+        "tags": [
+            "music",
+            "college radio",
+            "creative"
+        ],
+        "bio": "We hosted a late-night college radio show together. He produces indie tracks on weekends and always remembers to check in after big life events.",
+        "goal": 16,
+        "next_due_date": "2026-04-24"
+    }
+]

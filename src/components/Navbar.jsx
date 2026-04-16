@@ -18,8 +18,8 @@ const Navbar = () => {
     </>
 
     return (
-        <div className='shadow-2xs'>
-            <div className="navbar bg-base-100 w-11/12 mx-auto">
+        <div className='shadow-xl'>
+            <div className="navbar bg-base-100 w-11/12 mx-auto ">
                 <div className="navbar-start">
                     <Link href="/" className="btn btn-ghost">
                         <h1 className='text-2xl font-bold'><span className='text-[#1F2937]'>Keen</span><span className='text-[#244D3F]'>Keeper</span></h1>
