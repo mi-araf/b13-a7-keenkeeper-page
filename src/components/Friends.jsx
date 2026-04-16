@@ -30,11 +30,11 @@ const Friends = () => {
                 {
                     data.map(friend => (
                         <div key={friend.id}>
-                            <Link href={`/friend-${friend.id}`} className="hover-3d cursor-pointer">
+                            <Link href={`/friend/${friend.id}`} className="hover-3d cursor-pointer">
 
                                 <div className="card w-63 shadow-lg bg-white text-center rounded-xl">
-                                    <Image className='rounded-full mx-auto mt-6' src={friend.picture} alt={friend.name} width={80} height={80} />
-                                    <div className="card-body pt-3 space-y-2">
+                                    <Image className='rounded-full mx-auto mt-7' src={friend.picture} alt={friend.name} width={80} height={80} />
+                                    <div className="card-body pt-4 space-y-2">
                                         <h1 className="text-sm md:text-xl font-semibold text-[#1F2937] mb-1">{friend.name}</h1>
                                         <h6 className='text-[12px] text-[#64748B]'>{friend.days_since_contact}d ago</h6>
                                         <div className='flex gap-2 mx-auto uppercase'>
@@ -46,7 +46,24 @@ const Friends = () => {
                                                 ))
                                             }
                                         </div>
-                                        <div className='bg-warning w-fit rounded-full mx-auto text-xs text-white font-medium px-2.5 py-1.5'>Almost Due</div>
+                                        {/* <div className={`w-fit rounded-full mx-auto text-xs text-white font-medium px-2.5 py-1.5 ${friend.status === 'overdue' && 'bg-[#EF4444]'} ${friend.status === 'on-track' && 'bg-[#244D3F]'} ${friend.status === 'almost_due' && 'bg-[#EFAD44]'}`}> */}
+                                        <div className={`w-fit rounded-full mx-auto text-xs text-white font-medium px-2.5 py-1.5 ${friend.status === 'overdue' 
+                                        ? 'bg-[#EF4444]' 
+                                        : friend.status === 'on-track' 
+                                        ? 'bg-[#244D3F]' 
+                                        : friend.status === 'almost_due' 
+                                        ? 'bg-[#EFAD44]' 
+                                        : ''}`}>
+                                            {
+                                                friend.status === 'overdue' 
+                                                ? 'Overdue' 
+                                                : friend.status === 'on-track' 
+                                                ? 'On-Track' 
+                                                : friend.status === 'almost_due' 
+                                                ? 'Almost Due' 
+                                                : ''
+                                            }
+                                        </div>
                                     </div>
                                 </div>
 
