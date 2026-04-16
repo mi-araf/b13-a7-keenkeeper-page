@@ -19,13 +19,13 @@ const Footer = () => {
 
                         <h3 className="mt-6 text-xl font-semibold">Social Links</h3>
                         <div className="mt-4 flex items-center gap-4">
-                            <a href="#" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#244D3F] transition hover:scale-105">
+                            <a href="https://www.instagram.com/tde_araf" target="_blank" aria-label="Instagram" className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#244D3F] transition hover:scale-105">
                                 <FaInstagram />
                             </a>
-                            <a href="#" aria-label="Facebook" className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#244D3F] transition hover:scale-105" >
+                            <a href="https://www.facebook.com/mushfiq.araf.2024" target="_blank" aria-label="Facebook" className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#244D3F] transition hover:scale-105" >
                                 <FaFacebookF />
                             </a>
-                            <a href="#" aria-label="X" className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#244D3F] transition hover:scale-105" >
+                            <a href="https://web.programming-hero.com/" target="_blank" aria-label="X" className="flex h-11 w-11 items-center justify-center rounded-full bg-white text-[#244D3F] transition hover:scale-105" >
                                 <FaXTwitter />
                             </a>
                         </div>

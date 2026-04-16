@@ -9,7 +9,7 @@ import CallImage from '../../../public/assets/call.png';
 import TextImage from '../../../public/assets/text.png';
 import VideoImage from '../../../public/assets/video.png';
 
-const FILTERS = ['All', 'Call', 'Text', 'Video'];
+const options = ['All', 'Call', 'Text', 'Video'];
 const imageMap = {
     Call: CallImage,
     Text: TextImage,
@@ -27,10 +27,23 @@ const formatDate = (dateString) => {
 
 const TimeLinePage = () => {
     const [filter, setFilter] = useState('All');
+    const [search, setSearch] = useState('');
     const dropdownRef = useRef(null);
 
     const { entries } = useTimeline();
-    const filteredEntries = filter === 'All' ? entries : entries.filter((entry) => entry.type === filter);
+    
+    // Filter by type (Call, Text, Video)
+    let filteredEntries = filter === 'All' ? entries : entries.filter((entry) => entry.type === filter);
+    
+    // Filter by search query (friend name or interaction type)
+    if (search.trim()) {
+        const searchLower = search.toLowerCase();
+        filteredEntries = filteredEntries.filter((entry) => {
+            const type = entry.type.toLowerCase();
+            const friendName = entry.title.split(' with ')[1]?.toLowerCase() || '';
+            return type.includes(searchLower) || friendName.includes(searchLower);
+        });
+    }
 
     // Handle filter click and close dropdown
     const handleFilterClick = (option) => {
@@ -46,23 +59,45 @@ const TimeLinePage = () => {
                 <h1 className='text-[#1F2937] text-5xl font-bold'>Timeline</h1>
 
                 {/* filter dropdown */}
-                <div className='dropdown dropdown-center mt-8'>
-                    <div tabIndex={0} ref={dropdownRef} role='button' className='btn p-4 w-78 text-[#64748B] rounded-lg justify-start'>Filter timeline <span className='ml-40'><FaAngleDown /></span>
+                <div className='flex flex-col md:flex-row md:justify-between'>
+                    <div className='dropdown dropdown-center mt-8'>
+                        <div tabIndex={0} ref={dropdownRef} role='button' className='btn p-4 w-78 text-[#64748B] rounded-lg justify-start'>Filter timeline <span className='ml-40'><FaAngleDown /></span>
+                        </div>
+
+                        <ul tabIndex={-1} className='dropdown-content menu bg-white rounded-box z-1 w-76 p-4 shadow-lg' >
+                            <p className='opacity-50 font-medium text-sm ml-3 my-2'>Filter timeline</p>
+                            {
+                                options.map((option, index) => (
+                                    <li key={index}>
+                                        <button type="button" onClick={() => handleFilterClick(option)} className={`text-base font-medium ${filter === option ? "bg-[#244D3F] text-white" : ""}`}>
+                                            {option}
+                                        </button>
+                                    </li>
+                                ))
+                            }
+                        </ul>
                     </div>
 
-                    <ul tabIndex={-1} className='dropdown-content menu bg-white rounded-box z-1 w-76 p-4 shadow-lg' >
-                        <p className='opacity-50 font-medium text-sm ml-3 my-2'>Filter timeline</p>
-                        {
-                            FILTERS.map((option, index) => (
-                                <li key={index}>
-                                    <button type="button" onClick={() => handleFilterClick(option)} className={`text-base font-medium ${filter === option ? "bg-[#244D3F] text-white" : ""}`}>
-                                        {option}
-                                    </button>
-                                </li>
-                            ))
-                        }
-                    </ul>
+                    {/* search input */}
+                    <div className='mt-8'>
+                        <label className="input">
+                            <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <g
+                                    strokeLinejoin="round"
+                                    strokeLinecap="round"
+                                    strokeWidth="2.5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                >
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <path d="m21 21-4.3-4.3"></path>
+                                </g>
+                            </svg>
+                            <input type="search" placeholder="Search by name or type" value={search} onChange={(e) => setSearch(e.target.value)} />
+                        </label>
+                    </div>
                 </div>
+
 
                 <div className='mt-10 space-y-4'>
                     {

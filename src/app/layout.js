@@ -23,6 +23,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="light" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`} >
+      <link rel="icon" href="/assets/video.png" />
       <body className="">
         <TimelineProvider>
           <Navbar />

@@ -13,9 +13,9 @@ const StatsPage = () => {
         }
     });
     const data = [
-        { name: 'Call', value: counts.Call, fill: '#22c55e' },
-        { name: 'Text', value: counts.Text, fill: '#2563eb' },
-        { name: 'Video', value: counts.Video, fill: '#f59e0b' },
+        { name: 'Call', value: counts.Call, fill: '#204639' },
+        { name: 'Text', value: counts.Text, fill: '#7E35E1' },
+        { name: 'Video', value: counts.Video, fill: '#37A163' },
     ];
     const total = data.reduce((sum, item) => sum + item.value, 0);
 

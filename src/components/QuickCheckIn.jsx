@@ -36,7 +36,7 @@ export default function QuickCheckIn({ friendName }) {
                 <div className='mt-4 grid grid-cols-3 gap-4'>
                     {
                         actions.map((action) => (
-                            <button key={action.type} type='button' onClick={() => handleAction(action.type)} className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9] hover:border-[#359e7b] transition-colors cursor-pointer' >
+                            <button key={action.type} type='button' onClick={() => handleAction(action.type)} className='text-center bg-[#F8FAFC] space-y-2 py-4 rounded-lg border border-[#E9E9E9] hover:border-[#359e7b] cursor-pointer transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:ring-1 hover:ring-[#244D3F]/10' >
                                 <Image src={action.image} width={32} height={32} alt={action.label} className='mx-auto' />
                                 <p className='text-[#1F2937] text-sm md:text-lg'>{action.label}</p>
                             </button>
