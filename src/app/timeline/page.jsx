@@ -3,6 +3,7 @@
 import React, { useState, useRef } from 'react';
 import Image from 'next/image';
 import { FaAngleDown } from 'react-icons/fa6';
+import { useTimeline } from '@/context/TimelineContext';
 
 import CallImage from '../../../public/assets/call.png';
 import TextImage from '../../../public/assets/text.png';
@@ -28,18 +29,7 @@ const TimeLinePage = () => {
     const [filter, setFilter] = useState('All');
     const dropdownRef = useRef(null);
 
-    // Get timeline entries from localStorage
-    let entries = [];
-    if (typeof window !== 'undefined') {
-        try {
-            const raw = window.localStorage.getItem('keenkeeper-timeline');
-            entries = raw ? JSON.parse(raw) : [];
-        } catch (error) {
-            console.error('Failed to read timeline entries:', error);
-        }
-    }
-
-    // Filter entries based on selected filter
+    const { entries } = useTimeline();
     const filteredEntries = filter === 'All' ? entries : entries.filter((entry) => entry.type === filter);
 
     // Handle filter click and close dropdown
@@ -81,7 +71,7 @@ const TimeLinePage = () => {
                                 const image = imageMap[entry.type];
                                 const [type, ...nameParts] = entry.title.split(' with ');
                                 const name = nameParts.join(' with ');
-                                
+
                                 return (
                                     <div key={entry.id} className='card bg-white shadow-lg rounded-3xl p-6 border border-[#E9E9E9]'>
                                         <div className='flex items-center gap-4'>

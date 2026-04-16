@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { ToastContainer, toast } from 'react-toastify';
+import { useTimeline } from '@/context/TimelineContext';
 import CallImage from '../../public/assets/call.png';
 import TextImage from '../../public/assets/text.png';
 import VideoImage from '../../public/assets/video.png';
@@ -12,21 +13,9 @@ const actions = [
     { type: 'Video', label: 'Video', image: VideoImage },
 ];
 
-const addTimelineEntry = (entry) => {
-    if (typeof window === 'undefined') {
-        return;
-    }
-
-    try {
-        const existing = window.localStorage.getItem('keenkeeper-timeline');
-        const entries = existing ? JSON.parse(existing) : [];
-        window.localStorage.setItem('keenkeeper-timeline', JSON.stringify([entry, ...entries]));
-    } catch (error) {
-        console.error('Failed to save timeline entry:', error);
-    }
-};
-
 export default function QuickCheckIn({ friendName }) {
+    const { addTimelineEntry } = useTimeline();
+
     const handleAction = (type) => {
         const now = new Date();
         const entry = {
