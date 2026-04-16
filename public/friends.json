@@ -8,8 +8,7 @@
         "status": "overdue",
         "tags": [
             "college",
-            "close friend",
-            "hiking"
+            "friend"
         ],
         "bio": "Met during freshman orientation. She now teaches middle school science and still plans the best weekend trail trips.",
         "goal": 14,
@@ -23,9 +22,8 @@
         "days_since_contact": 6,
         "status": "on-track",
         "tags": [
-            "former coworker",
-            "basketball",
-            "startup"
+            "coworker",
+            "basketball"
         ],
         "bio": "Worked together at a small design agency. He recently joined an early-stage startup and still sends voice notes after pickup games.",
         "goal": 21,
@@ -39,7 +37,7 @@
         "days_since_contact": 12,
         "status": "almost_due",
         "tags": [
-            "travel buddy",
+            "buddy",
             "photography"
         ],
         "bio": "We met on a train through Portugal and stayed friends. She freelances as a photographer and is always chasing golden-hour light.",
@@ -55,8 +53,7 @@
         "status": "overdue",
         "tags": [
             "roommate",
-            "gaming",
-            "movie nights"
+            "gaming"
         ],
         "bio": "Shared an apartment for two years. He works in IT support now and still hosts elaborate movie marathons with themed snacks.",
         "goal": 21,
@@ -70,9 +67,7 @@
         "days_since_contact": 9,
         "status": "on-track",
         "tags": [
-            "language exchange",
-            "coffee",
-            "Berlin"
+            "Work"
         ],
         "bio": "Started as a language-exchange partner and turned into a real friend. She loves tiny cafes, stationery shops, and long voice messages.",
         "goal": 18,
@@ -80,17 +75,16 @@
     },
     {
         "id": 6,
-        "name": "Jordan Reed",
-        "picture": "https://randomuser.me/api/portraits/men/11.jpg",
-        "email": "jordan.reed@example.com",
-        "days_since_contact": 13,
-        "status": "almost_due",
+        "name": "Jordian Reeda",
+        "picture": "https://randomuser.me/api/portraits/women/11.jpg",
+        "email": "jordian.reeda@example.com",
+        "days_since_contact": 2,
+        "status": "on-track",
         "tags": [
             "neighbor",
-            "dog park",
-            "weekend brunch"
+            "thoughtful"
         ],
-        "bio": "Became friends after our dogs kept choosing the same patch of grass. He is a civil engineer and knows every decent brunch spot in town.",
+        "bio": "Became friends after our dogs kept choosing the same patch of grass. She is a civil engineer and knows every decent brunch spot in town.",
         "goal": 15,
         "next_due_date": "2026-04-16"
     },
@@ -102,9 +96,7 @@
         "days_since_contact": 31,
         "status": "overdue",
         "tags": [
-            "grad school",
-            "book club",
-            "thoughtful"
+            "University"
         ],
         "bio": "We survived graduate statistics together. She runs a neighborhood book club and always has a sharp recommendation for what to read next.",
         "goal": 30,
@@ -116,11 +108,9 @@
         "picture": "https://randomuser.me/api/portraits/men/54.jpg",
         "email": "caleb.turner@example.com",
         "days_since_contact": 4,
-        "status": "on-track",
+        "status": "almost_due",
         "tags": [
-            "tennis",
-            "high school",
-            "road trips"
+            "school"
         ],
         "bio": "Known each other since sophomore year of high school. He coaches youth tennis now and still suggests last-minute road trips with suspicious confidence.",
         "goal": 10,
@@ -135,7 +125,7 @@
         "status": "almost_due",
         "tags": [
             "volunteer",
-            "community garden"
+            "College"
         ],
         "bio": "Met while volunteering at a Saturday food pantry. She helps run a community garden and sends photos whenever her tomatoes start showing off.",
         "goal": 21,
@@ -150,7 +140,6 @@
         "status": "on-track",
         "tags": [
             "music",
-            "college radio",
             "creative"
         ],
         "bio": "We hosted a late-night college radio show together. He produces indie tracks on weekends and always remembers to check in after big life events.",
